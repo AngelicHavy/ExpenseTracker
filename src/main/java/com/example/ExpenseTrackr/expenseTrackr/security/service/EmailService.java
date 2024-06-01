@@ -17,7 +17,7 @@ public class EmailService {
     private String sendGridApiKey;
 
     public void sendVerificationEmail(String to, String code) throws Exception {
-        Email from = new Email("nadya.yarmak03@gmail.com");
+        Email from = new Email("email");
         String subject = "Verification Code";
         Email toEmail = new Email(to);
         Content content = new Content("text/plain", "Your verification code is: " + code);

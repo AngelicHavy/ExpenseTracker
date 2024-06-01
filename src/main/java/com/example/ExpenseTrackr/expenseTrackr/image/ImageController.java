@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 @RestController
 @RequestMapping("/image")
 public class ImageController {
-    private final String imagePath = "C:/Users/nadya/OneDrive/Desktop/univer/3 course/2 semester/mobile/an/image/";
+    private final String imagePath = "C:/Users/OneDrive/Desktop/univer/3 course/2 semester/mobile/an/image/";
 
     @GetMapping("/{filename:.+}")
     public ResponseEntity<Resource> getImage(@PathVariable String filename) {

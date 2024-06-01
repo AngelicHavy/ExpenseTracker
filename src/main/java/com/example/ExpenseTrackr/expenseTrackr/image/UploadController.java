@@ -17,7 +17,7 @@ import java.nio.file.StandardCopyOption;
 @RequestMapping("/transactional/upload")
 public class UploadController {
 
-    private final String imagePath = "C:/Users/nadya/OneDrive/Desktop/univer/3 course/2 semester/mobile/an/image/";
+    private final String imagePath = "C:/Users/OneDrive/Desktop/univer/3 course/2 semester/mobile/an/image/";
 
     @PostMapping("/image")
     public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file) {
